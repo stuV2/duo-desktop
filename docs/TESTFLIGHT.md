@@ -4,6 +4,9 @@ Fork: https://github.com/stuV2/duo-desktop
 
 Bundle ID: `com.stuv2.duodesktop`. Minimum iOS: 27.0.
 
+App Store Connect name: **Duo Desktop by Stu** (the original name was unavailable).
+App ID: `6839305832`. [App Store Connect record](https://appstoreconnect.apple.com/apps/6839305832/distribution).
+
 Includes Mac screen sharing, SSH Terminal, Windows RDP, and JetKVM.
 iCloud sync and unfinished basic VNC are off by default.
 
@@ -27,8 +30,8 @@ scripts/testflight.sh archive
 
 ## Upload
 
-Sign into the paid developer team in Xcode. Create an iOS app record in App Store
-Connect using `com.stuv2.duodesktop`, then run:
+Sign into the paid developer team in Xcode. The iOS app record and explicit bundle
+identifier are already registered. Run:
 
 ```sh
 scripts/testflight.sh upload
