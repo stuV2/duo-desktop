@@ -5,3 +5,4 @@ app/build/
 DerivedData/
 .DS_Store
 app/private-names.local.txt
+app/signing.local.env

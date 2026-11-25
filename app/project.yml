@@ -27,7 +27,7 @@ settings:
   base:
     SWIFT_VERSION: "5.0"
     MARKETING_VERSION: "0.1"
-    CURRENT_PROJECT_VERSION: 63
+    CURRENT_PROJECT_VERSION: 1
     # The two build switches. Both empty here: the plain Glass Act version, with no SwiftTerm, SwiftNIO or WebRTC
     # linked. project-terminal.yml (xcodegen with DUO_TERMINAL=YES) sets DUO_TERMINAL_FLAG and adds the terminal
     # packages; project-jetkvm.yml (xcodegen with DUO_JETKVM=YES) sets DUO_JETKVM_FLAG and adds the JetKVM client and
@@ -46,7 +46,7 @@ settings:
     # below read these. In-app texts in DuoDesktop/*.swift and Notices/ spell the name out.
     DUO_APP_NAME: Duo Desktop
     # CHANGE THIS: a bundle id of your own, for example com.yourname.duodesktop.
-    DUO_BUNDLE_ID: com.example.duodesktop
+    DUO_BUNDLE_ID: com.stuv2.duodesktop
     # Signed device builds for TestFlight. Simulator builds stay unsigned as before, so there the phone's key falls back
     # to a file (plan section 8). CHANGE THIS: your own Apple developer team id (Xcode > Settings > Accounts, or
     # developer.apple.com > Membership).

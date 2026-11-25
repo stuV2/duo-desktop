@@ -51,7 +51,7 @@ if [ -f "$APP/BasicScreenSharingNotice.txt" ]; then
 fi
 # The copied source files still carry their MIT header.
 for f in SessionModel.swift CanvasView.swift; do
-  if head -2 "$HERE/DuoDesktop/$f" | grep -q "MIT licensed"; then echo "ok       source header: $f"
+  if head -4 "$HERE/DuoDesktop/$f" | sed 's|^// *||' | tr '\n' ' ' | grep -Eq 'MIT[[:space:]]+licensed'; then echo "ok       source header: $f"
   else echo "ABSENT   source header: $f"; fail=1; fi
 done
 [ $fail -eq 0 ] && echo "PASS: every notice is in the built app" || echo "FAIL"
